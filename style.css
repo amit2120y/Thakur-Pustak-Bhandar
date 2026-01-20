@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: #f9f6f2;
+    color: #3d2b1f;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #efe7dc;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #3d2b1f;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-png {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3d2b1f;
+}
+
+.btn {
+    background: #3d2b1f;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn.light {
+    background: #fff;
+    color: #3d2b1f;
+}
+
+/* HERO */
+.hero {
+    background: url("images/hero.png") center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    text-align: center;
+    padding: 50px;
+}
+
+.quotes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 33%;
+    border-radius: 6px;
+}
+
+/* FEATURE */
+.feature {
+    background: #efe7dc;
+    text-align: center;
+    padding: 60px;
+}
+
+/* FAVORITE */
+.favorite {
+    text-align: center;
+    padding: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* STORY */
+.story {
+    text-align: center;
+    padding: 60px;
+}
+
+/* CATEGORIES */
+.categories {
+    padding: 50px;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* COMMUNITY */
+.community {
+    background: #3d2b1f;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+/* FOOTER */
+footer {
+    background: #efe7dc;
+    text-align: center;
+    padding: 20px;
+}
