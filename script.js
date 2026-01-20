@@ -1,11 +1,16 @@
+const bodyEl = document.body;
+
 // Smooth scroll navigation for nav links
 document.querySelectorAll('header nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
+    link.addEventListener('click', function (e) {
         const sectionName = link.textContent.toLowerCase().replace(/\s+/g, '');
         const section = document.querySelector('section.' + sectionName);
         if (section) {
             e.preventDefault();
             section.scrollIntoView({ behavior: 'smooth' });
+        }
+        if (bodyEl.classList.contains('nav-open')) {
+            bodyEl.classList.remove('nav-open');
         }
     });
 });
@@ -46,7 +51,8 @@ galleryImgs.forEach(img => {
         const overlay = document.createElement('div');
         overlay.style.position = 'fixed';
         overlay.style.top = '0'; overlay.style.left = '0';
-        overlay.style.width = '100vw'; overlay.style.height = '100vh';
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
         overlay.style.background = 'rgba(0,0,0,0.7)';
         overlay.style.display = 'flex';
         overlay.style.alignItems = 'center';
@@ -79,3 +85,11 @@ if (joinBtn) {
     });
 }
 
+// Mobile nav toggle
+const menuToggle = document.querySelector('.menu-toggle');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        bodyEl.classList.toggle('nav-open');
+    });
+}
